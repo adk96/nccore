@@ -1,0 +1,28 @@
+CREATE TABLE `call_msg` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`type` VARCHAR(50) NOT NULL DEFAULT '',
+	`caller_id` VARCHAR(50) NOT NULL DEFAULT '',
+	`caller_id_name` VARCHAR(50) NOT NULL DEFAULT '',
+	`connected_line_name` VARCHAR(50) NOT NULL DEFAULT '',
+	`connected_line_num` VARCHAR(50) NOT NULL DEFAULT '',
+	`done` TINYINT(4) NOT NULL DEFAULT '0',
+	`created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=92
+;
+
+CREATE TABLE `client` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(50) NOT NULL,
+	`description` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=3
+;
+
